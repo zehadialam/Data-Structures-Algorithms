@@ -23,16 +23,16 @@ int binarySearchIterative(const int arr[], long long size, int target) {
     return -1;
 }
 
-int binarySearchRecursive(const int arr[], long long size, int l, long long h, int target) {
-    if (l > h) {
+int binarySearchRecursive(const int arr[], long long size, int low, long long high, int target) {
+    if (low > high) {
         cout << "The number " << target << " does not exist in the array" << endl;
         return -1;
     }
-    int mid = (int) (l + h) / 2;
+    int mid = (int) (low + high) / 2;
     if (arr[mid] < target) {
-        return binarySearchRecursive(arr, size, mid + 1, h, target);
+        return binarySearchRecursive(arr, size, mid + 1, high, target);
     } else if (arr[mid] > target) {
-        return binarySearchRecursive(arr, size, l, mid - 1, target);
+        return binarySearchRecursive(arr, size, low, mid - 1, target);
     } else {
         cout << "Found number " << target << " at index " << mid << endl;
         return mid;
