@@ -1,2 +1,5 @@
-# Data-Structures-Implementations
-Implementations of common data structures in C++
+# Data Structures Implementations
+
+This repository contains C++ implementations of the following data structures:
+
+* Singly Linked List (Sorted)
