@@ -6,8 +6,4 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories("Sorted Linked List")
 
 add_executable(Data_Structures_Implementations
-        "Sorted Linked List/Data.cpp"
-        "Sorted Linked List/Data.h"
-        "Sorted Linked List/SortedLinkedList.cpp"
-        "Sorted Linked List/SortedLinkedList.h"
-        "Sorted Linked List/Node.h" "Sorted Linked List/main.cpp")
+        "Hash Table/Data.cpp" "Hash Table/Data.h" "Hash Table/HashTable.cpp" "Hash Table/HashTable.h" "Hash Table/main.cpp")
